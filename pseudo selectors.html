@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pseudo selectors</title>
+	<style>
+		header li{
+			list-style: none;
+		}
+		a:link,a:visited{
+			text-decoration: none;
+			background-color: green;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 2px;
+		}
+		a:hover, a:active{
+			background-color: red;
+			color: yellow;
+		}
+		section div:nth-child(odd){
+			background-color: gray;
+		}
+		section div:nth-child(2):hover:active{
+			background-color: green;
+			color: yellow;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo class selectors</h1>
+	<header>
+		<ul>
+			<li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/InZyk/lecture-15-pseudo-class-selectors" target="_blank">coursera page</a></li>
+			<li><a href="https://github.com/godha112/css-course" target="_blank">my github page</a></li>
+			<li><a href="https://www.google.co.in/" target="_blank">google page</a></li>
+		</ul>
+	</header>
+	<section>
+		<div>division 1</div>
+		<div>division 2</div>
+		<div>division 3</div>
+		<div>division 4</div>
+		<div>division 5</div>
+	</section>
+
+</body>
+</html>
