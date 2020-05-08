@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>combined selectors</title>
+	<style>
+		p.big{
+			color: red;
+			font-style: italic;
+		}
+		/*child selector*/
+		article>p{
+			color: blue;
+			font-style: initial;
+		}
+		/*descendent selector*/
+		article.descendentselector p{
+			color: orange;
+			font-style: oblique;
+			background-color: black; 
+		}
+		p.first.second{
+			color: green;
+			font-style: inherit;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>this is about combining selectors!!!</h1>
+	<p class="big">this is the paragragh that uses element with combined selector. Only a paragragh with class big will get styles by the rules mentioned.</p>
+	<p>this is another paragraph but wont be colored beacuse it doesn't belong class big</p>
+	<h2>this is subheading 1</h2>
+	<article>
+		<p>this is direct child of the article. this will get styled by a combined selector of direct child paragraph and article.</p>
+		<div><p>this is also a paragraph in the article but is not a direct child so will not get styled by the child selector. but can be styled by using styled selector</p>
+		</div>
+	</article>
+	<article class="descendentselector">
+		<p>this is the direct paragraph. Now since we are using descendent selector this paragraph even after being a direct child will get styled by the descendent selector.</p>
+		<div><p>this is not a direct child of the article. If we are using child selector it will not get styled.but since we are using descendent selector it will get styled. YAY!!</p></div>
+	</article>
+	<p class="first second">this is a paragraph which has two different classes. this is styled by using element combined class selector as before but the only difference is that it has two class mentioned insted of one.
+
+</body>
+</html>
