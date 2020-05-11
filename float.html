@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>float test</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		div{
+			background-color: lightblue;
+		}
+		section{
+			color: black;
+			clear: left;
+			
+		}
+		p{
+			text-align: center;
+			height: 80px;
+			width: 80px;
+			padding: 4px;
+			border: 5px solid black;
+			margin: 2px;
+			float: left;
+		}
+		#p1{
+			border: 5px solid gray;
+			background-color: black;
+			color: orange;
+			float: right;
+			
+		}
+		#p2{
+			background-color: green;
+			color: yellow;
+			float: right;
+		}
+		#p3{
+			background-color: pink;
+			color: black;
+			float: right;
+			clear: right;
+		}
+		#p4{
+			background-color: purple;
+			color: pink;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<h1>floating elements</h1>
+	<div>
+	<p id="p1">this is paragraph one!</p>
+	<p id="p2">this is paragraph two!</p>
+	<p id="p3">this is paragraph three!</p>
+	<p id="p4">this is paragraph four!</p>
+	<section>
+		this is the normal content after the four paragraphs!
+	</section>
+	</div>
+
+</body>
+</html>
